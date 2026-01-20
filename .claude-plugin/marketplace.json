@@ -1,12 +1,15 @@
 {
-  "name": "justq-marketplace",
+  "name": "justq-claude-plugins",
   "owner": {
     "name": "JustQ"
   },
   "plugins": [
     {
       "name": "claude-memory",
-      "source": ".",
+      "source": {
+        "source": "github",
+        "repo": "q-public/claude-mcp-memory"
+      },
       "description": "Save conversation context and resume work across Claude Code sessions with persistent memory snapshots",
       "version": "0.2.0",
       "author": {

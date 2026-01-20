@@ -1,6 +1,6 @@
 {
   "name": "claude-mcp-memory",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Persistent memory layer for Claude Code - save and resume conversation context",
   "author": "JustQ",
   "commands": {
