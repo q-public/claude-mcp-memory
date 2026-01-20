@@ -1,16 +1,18 @@
 {
-  "name": "claude-mcp-memory",
+  "name": "claude-memory",
   "version": "0.2.0",
-  "description": "Persistent memory layer for Claude Code - save and resume conversation context",
-  "author": "JustQ",
-  "commands": {
-    "/memory": {
-      "description": "Memory management for Claude Code sessions",
-      "subcommands": {
-        "summarize": "Summarize current conversation into structured memory",
-        "save": "Save summarized memory to disk (JSON + Markdown)",
-        "load": "Load previous memory snapshot into current context"
-      }
-    }
-  }
+  "description": "Save conversation context and resume work across Claude Code sessions with persistent memory snapshots",
+  "author": {
+    "name": "JustQ"
+  },
+  "homepage": "https://github.com/q-public/claude-mcp-memory#readme",
+  "repository": "https://github.com/q-public/claude-mcp-memory",
+  "license": "ISC",
+  "keywords": [
+    "memory",
+    "persistence",
+    "session",
+    "context",
+    "resume"
+  ]
 }
