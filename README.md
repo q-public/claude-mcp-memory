@@ -1,4 +1,8 @@
-# Claude Memory Plugin
+# Claude Memory Plugin 💾
+
+[![Version](https://img.shields.io/badge/version-0.2.0-blue.svg)](https://github.com/q-public/claude-mcp-memory)
+[![License](https://img.shields.io/badge/license-ISC-green.svg)](LICENSE)
+[![Node](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg)](https://nodejs.org)
 
 Persistent memory layer for Claude Code - save conversation context and resume work across sessions.
 

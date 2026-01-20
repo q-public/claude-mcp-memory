@@ -1,0 +1,66 @@
+{
+  "name": "claude-memory",
+  "displayName": "Memory Plugin",
+  "version": "0.2.0",
+  "description": "Save conversation context and resume work across Claude Code sessions with persistent memory snapshots.",
+  "author": {
+    "name": "JustQ",
+    "url": "https://github.com/q-public"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/q-public/claude-mcp-memory.git"
+  },
+  "homepage": "https://github.com/q-public/claude-mcp-memory#readme",
+  "keywords": [
+    "memory",
+    "persistence",
+    "session",
+    "context",
+    "resume",
+    "state",
+    "save",
+    "load"
+  ],
+  "categories": [
+    "productivity",
+    "workflow"
+  ],
+  "icon": "💾",
+  "commands": [
+    {
+      "command": "/memory summarize",
+      "description": "Summarize current conversation into structured memory format"
+    },
+    {
+      "command": "/memory save",
+      "description": "Save memory snapshot to disk (JSON + Markdown)"
+    },
+    {
+      "command": "/memory load",
+      "description": "Load previous memory snapshot to resume work"
+    }
+  ],
+  "installation": {
+    "requirements": {
+      "node": ">=18.0.0"
+    },
+    "steps": [
+      "npm install",
+      "npm run build"
+    ]
+  },
+  "screenshots": [
+    "examples/example-memory.md"
+  ],
+  "changelog": "https://github.com/q-public/claude-mcp-memory/commits/main",
+  "support": "https://github.com/q-public/claude-mcp-memory/issues",
+  "tags": [
+    "memory",
+    "persistence",
+    "session-management",
+    "workflow",
+    "productivity"
+  ]
+}
