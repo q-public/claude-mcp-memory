@@ -25,7 +25,7 @@ Memory snapshots are stored as both machine-readable JSON and human-readable Mar
 /plugin marketplace add q-public/claude-mcp-memory
 
 # Install the plugin
-/plugin install claude-memory@justq-marketplace
+/plugin install claude-memory@justq-claude-plugins
 ```
 
 ### Manual Installation

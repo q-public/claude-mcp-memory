@@ -13,7 +13,7 @@ Your Claude Memory Plugin is now available for installation via multiple methods
 /plugin marketplace add q-public/claude-mcp-memory
 
 # Install the plugin
-/plugin install claude-memory@justq-marketplace
+/plugin install claude-memory@justq-claude-plugins
 ```
 
 **Status**: ✅ Available now!
@@ -79,7 +79,7 @@ Try it yourself:
 ```bash
 # Method 1: Via marketplace
 /plugin marketplace add q-public/claude-mcp-memory
-/plugin install claude-memory@justq-marketplace
+/plugin install claude-memory@justq-claude-plugins
 
 # Verify it works
 /memory summarize
@@ -130,7 +130,7 @@ Try it yourself:
 
 Install now:
 /plugin marketplace add q-public/claude-mcp-memory
-/plugin install claude-memory@justq-marketplace
+/plugin install claude-memory@justq-claude-plugins
 
 #ClaudeCode #AI #Productivity
 
@@ -150,7 +150,7 @@ Features:
 
 Installation:
 /plugin marketplace add q-public/claude-mcp-memory
-/plugin install claude-memory@justq-marketplace
+/plugin install claude-memory@justq-claude-plugins
 
 GitHub: https://github.com/q-public/claude-mcp-memory
 
