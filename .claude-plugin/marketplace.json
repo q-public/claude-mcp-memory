@@ -7,8 +7,8 @@
     {
       "name": "claude-memory",
       "source": {
-        "source": "github",
-        "repo": "q-public/claude-mcp-memory"
+        "source": "url",
+        "url": "https://github.com/q-public/claude-mcp-memory.git"
       },
       "description": "Save conversation context and resume work across Claude Code sessions with persistent memory snapshots",
       "version": "0.2.0",
