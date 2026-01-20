@@ -18,20 +18,34 @@ Memory snapshots are stored as both machine-readable JSON and human-readable Mar
 
 ## Installation
 
+### Quick Install (Recommended)
+
+```bash
+# Add the marketplace
+/plugin marketplace add q-public/claude-mcp-memory
+
+# Install the plugin
+/plugin install claude-memory@justq-marketplace
+```
+
+### Manual Installation
+
 1. Clone this repository into your plugins directory:
    ```bash
    cd ~/.claude/plugins  # or your preferred plugins location
-   git clone <this-repo> claude-memory
+   git clone https://github.com/q-public/claude-mcp-memory.git
+   cd claude-mcp-memory
    ```
 
 2. Install dependencies and build:
    ```bash
-   cd claude-memory
    npm install
    npm run build
    ```
 
-3. The plugin is now available in Claude Code!
+3. Restart Claude Code and the plugin will be available!
+
+See [INSTALL.md](INSTALL.md) for detailed installation instructions.
 
 ## Usage
 
