@@ -4,8 +4,8 @@ node_modules/
 # Build output
 dist/
 
-# Memory storage (local data)
-memory/
+# Memory storage (local data - at project root only)
+/memory/
 
 # Temp files
 *.tmp
