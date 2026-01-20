@@ -1,0 +1,15 @@
+{
+    "name": "claude-mcp-memory",
+    "version": "0.1.0",
+    "description": "Claude MCP plugin providing persistent agent memory",
+    "commands": {
+        "/memory": {
+            "description": "Claude memory management",
+            "subcommands": {
+                "summarize": "Summarize conversation into agent memory",
+                "save": "Save summarized memory",
+                "load": "Load memory into current context"
+            }
+        }
+    }
+}

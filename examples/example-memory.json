@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "createdAt": "2026-01-21T05:30:00.000Z",
+    "project": "ecommerce-api",
+    "agent": "claude",
+    "version": "1.0"
+  },
+  "context": {
+    "goal": "Implement user authentication system with JWT tokens and refresh token rotation",
+    "techStack": [
+      "TypeScript",
+      "Express.js",
+      "PostgreSQL",
+      "JWT (jsonwebtoken)",
+      "bcrypt",
+      "Zod"
+    ],
+    "constraints": [
+      "Must support existing database schema",
+      "Tokens expire after 15 minutes",
+      "Refresh tokens rotate on each use",
+      "No third-party auth services (in-house only)"
+    ]
+  },
+  "state": {
+    "implemented": [
+      "User model with password hashing",
+      "Login endpoint with JWT generation",
+      "Token validation middleware",
+      "Refresh token table and rotation logic"
+    ],
+    "pending": [
+      "Password reset flow",
+      "Email verification",
+      "Rate limiting on login endpoint",
+      "Audit logging for authentication events"
+    ],
+    "filesTouched": [
+      "src/models/User.ts",
+      "src/routes/auth.ts",
+      "src/middleware/authenticate.ts",
+      "src/utils/jwt.ts",
+      "migrations/20260121_add_refresh_tokens.sql"
+    ]
+  },
+  "decisions": [
+    {
+      "decision": "Use bcrypt with cost factor 12",
+      "rationale": "Balance between security and performance. Cost 12 takes ~250ms, acceptable for auth operations"
+    },
+    {
+      "decision": "Store refresh tokens in database",
+      "rationale": "Enables token revocation and security auditing, slight latency acceptable for refresh flow"
+    },
+    {
+      "decision": "Use Zod for request validation",
+      "rationale": "Already used elsewhere in codebase, provides TypeScript type inference"
+    }
+  ],
+  "nextActions": [
+    "Implement password reset email flow using existing EmailService",
+    "Add rate limiting middleware (5 attempts per 15 minutes per IP)",
+    "Write integration tests for full auth flow",
+    "Add OpenAPI documentation for auth endpoints",
+    "Security review with team before production deployment"
+  ]
+}
